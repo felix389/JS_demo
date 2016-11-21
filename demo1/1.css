@@ -1,0 +1,80 @@
+.btn {
+  padding: .66em 2.25em;
+  text-decoration: none;
+  position: relative;
+  display: inline-block;
+}
+.btn:after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0.125em;
+  left: 0.125em;
+  border-bottom: 0.125em solid;
+  border-right: 0.125em solid;
+}
+.btn:active {
+  transform: translate(0.125em, 0.125em);
+}
+.btn:active:after {
+  transform: translate(-0.125em, -0.125em);
+}
+
+.btn-filled {
+  background-color: #e4457d;
+  color: #fff;
+  transition: background-color 0.2s ease-out;
+}
+.btn-filled:after {
+  border-color: #e4457d;
+  transition: border-color 0.2s ease-out;
+}
+.btn-filled:hover {
+  background-color: #cd2f66;
+}
+.btn-filled:hover:after {
+  border-color: #cd2f66;
+}
+
+.btn-outline {
+  color: #e4457d;
+  box-shadow: inset 0 0 0 0.125em currentcolor;
+  transition: color 0.2s ease-out;
+}
+.btn-outline:after {
+  border-color: currentcolor;
+}
+.btn-outline:hover {
+  color: #cd2f66;
+}
+
+.btn-outline-fill {
+  color: #e4457d;
+  box-shadow: inset 0 0 0 0.125em #e4457d;
+  background-color: transparent;
+  transition: color 0.2s ease-out, box-shadow 0.2s ease-out, background-color 0.2s ease-out;
+}
+.btn-outline-fill:after {
+  border-color: #e4457d;
+}
+.btn-outline-fill:hover {
+  color: #fff;
+  background-color: #cd2f66;
+  box-shadow: inset 0 0 0 0.125em transparent;
+}
+.btn-outline-fill:hover:after {
+  border-color: #cd2f66;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: sans-serif;
+}
+body .btn {
+  margin: 1rem;
+}

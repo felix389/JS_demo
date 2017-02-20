@@ -3,12 +3,9 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script type="text/javascript" src="public/javascripts/lib/bootstrap.min.js"></script>
-    <script type="text/javascript" src="public/javascripts/lib/jquery.visible.js"></script>
-    <script type="text/javascript" src="public/javascripts/jquery.cookie.js"></script>
-
-    <script type="text/javascript" src="public/javascripts/timepot-pages-text.js"></script>
-    <script type="text/javascript" src="public/javascripts/timepot-homepage.js"></script>   
+    <link href="css/bootstrap.min.css" rel="stylesheet">   
+    <link rel="stylesheet" href="css/animate.css">
+  <link rel="stylesheet" href="css/modal.css"> 
     <title>球邦</title>
     <style media="screen">
       body {
@@ -28,37 +25,40 @@
       #jilu {
         float: left;
         margin-left: 5%;
-        font-family: 'Microsoft Yahei!';
+        font-family: "Microsoft YaHei";
         font-size: 32px;
         color: #ffffff;
         line-height: 100px;
+        letter-spacing: 10px;
       }
       #dian{
         float: left;
-        font-family: 'Microsoft Yahei!';
+        font-family: 'Microsoft Yahei';
         font-size: 32px;
         color: #ffffff;
         line-height: 100px;
+        letter-spacing: 10px;
       }
       #gaoguang{
         float: left;
-        font-family: 'Microsoft Yahei!';
+        font-family: "Microsoft Yahei";
         font-size: 32px;
         color: #ffffff;
         line-height: 100px;
+        letter-spacing: 10px;
       }
 
       #tel{
         float: right;
         margin-right: 20%;
-        font-family: 'Microsoft Yahei!';
+        font-family: 'Microsoft Yahei';
         font-size: 16px;
         color: #ffffff;
         line-height: 100px;
       }
       #email{
         float: right;
-        margin-right: 1%;
+        margin-right: 17%;
         position: relative;
         top: 30px;   
       }
@@ -98,7 +98,7 @@
         height: 100px;
         background-color: rgb(218,92,29);
         margin-top: 150px;
-         font-family: 'Microsoft Yahei!';
+         font-family: 'Microsoft Yahei';
         font-size: 14px;
         color: #ffffff;
         line-height: 100px;
@@ -141,6 +141,29 @@
         width: 360px;
         height: 200px;
       }
+      .u-trigger{
+    position: absolute;
+    display: block;
+    width: 120px;
+    height: 32px;
+    font-size: 16px;
+    margin: 60px auto;
+    cursor: pointer;
+    top: -20px;
+    right: 10%;
+    color: #ffffff;
+  }
+      .font-1{
+        font-family: "Microsoft Yahei";
+      }
+      .font-2{
+        font-family: "Microsoft Yahei";
+      }
+      .font-3{
+        font-family: "Microsoft YaHei";
+        text-align: center;
+      }
+
     </style>
   </head>
   <body>
@@ -148,9 +171,9 @@
       <div class="header_img">
         <img src="images/Bunion_headerlogo.png" alt="" id="headerimg">
         <p id="jilu">记录</p><p id="dian">·</p><p id="gaoguang">你的高光时刻</p>
-          <p id="tel">联系我们</p>
+          
         <img src="images/Bunion_header_icn_email.png" alt="" id="email">
-
+        <a class='u-trigger' >联系我们</a>
       </div>
     </div>
     <div class="img">
@@ -162,7 +185,7 @@
       <div class="container">
 <div class="row clearfix">
   <div class="col-md-12 column">
-    <h3 class="text-center">
+    <h3 class="text-center font-1">
       赛事管理
     </h3>
   </div>
@@ -171,51 +194,51 @@
   <div class="col-md-4 column">
     <img  src="" id="img-1" />
     <p class="text-center">
-       <strong>建立联赛</strong> <br>
-       联赛数字化线上管理平台
+       <strong class="font-2">建立联赛</strong> <br>
+       <p class="font-3">联赛数字化线上管理平台</p>
     </p>
   </div>
   <div class="col-md-4 column">
     <img  src="" id="img-2" />
     <p class="text-center">
-       <strong>创建比赛</strong> <br>
-        全程呈现比赛过程，轻松赛程管理
+       <strong class="font-2">创建比赛</strong> <br>
+        <p class="font-3">全程呈现比赛过程，轻松赛程管理</p>
      </p>
   </div>
   <div class="col-md-4 column">
     <img  src="" id="img-3"/>
     <p class="text-center">
-       <strong>比赛记录</strong> <br>
-       最全面、高效的数据录入系统
+       <strong class="font-2">比赛记录</strong> <br>
+      <p class="font-3"> 最全面、高效的数据录入系统</p>
      </p>
   </div>
 </div>
 <div class="row clearfix">
   <div class="col-md-12 column">
-    <h3 class="text-center">
+    <h3 class="text-center font-1">
       个人生涯
     </h3>
     <div class="row clearfix">
       <div class="col-md-4 column">
         <img  src="" id="img-4" />
         <p class="text-center">
-           <strong>历史战绩</strong> <br>
-           让成为历史的比赛在这里铭记
+           <strong class="font-2">历史战绩</strong> <br>
+          <p class="font-3"> 让成为历史的比赛在这里铭记</p>
          </p>
 
       </div>
       <div class="col-md-4 column">
         <img  src="" id="img-5"/>
         <p class="text-center">
-           <strong>生涯数据</strong> <br>
-           用每个数据记录你的篮球生涯
+           <strong class="font-2">生涯数据</strong> <br>
+           <p class="font-3">用每个数据记录你的篮球生涯</p>
          </p>
       </div>
       <div class="col-md-4 column">
         <img src="" id="img-6"/>
         <p class="text-center">
-           <strong>投篮热图</strong> <br>
-           冷热手感，优势区域一目了然
+           <strong class="font-2">投篮热图</strong> <br>
+           <p class="font-3">冷热手感，优势区域一目了然</p>
          </p>
       </div>
     </div>
@@ -226,7 +249,45 @@
     <div class="footer">
         <p>copyright 201X - 201X 版权归属 北京球帮科技有限公司 京XXX备XXXXXX号-X</p>
     </div>
-    <script src="https://code.jquery.com/jquery.js"></script>
+      <script src="js/jquery-3.1.1.min.js"></script>
       <script src="js/bootstrap.min.js"></script>
+      <script src='js/animate.js'></script>
+      <script src='js/modal.js'></script>
+     <script>
+
+
+
+
+
+var modal = new Modal({
+  // 1. 内容配置
+  cotent: "内容在此", //可传入节点和字符串
+  // 2. 动画设置
+  animation: {
+    enter: 'bounceIn',
+    leave: 'bounceOut'
+  }
+  // // 3. confirm回调
+  // onConfirm: function(){
+  //   console.log('ok')
+  // },
+  // // 4. cancel糊掉
+  // onCancel: function(){
+  //   console.log('cancel')
+  // }
+})
+
+
+modal.on('confirm', function(){
+  console.log('confirm')
+})
+
+
+
+document.querySelector('.u-trigger').addEventListener('click', function(){
+  modal.show("<h3>email:xxxx@xxx.com</h3"); 
+
+})
+</script>
   </body>
 </html>

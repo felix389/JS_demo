@@ -3,9 +3,9 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="css/bootstrap.min.css" rel="stylesheet">   
-    <link rel="stylesheet" href="css/animate.css">
-  <link rel="stylesheet" href="css/modal.css"> 
+    <link href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">   
+    <link rel="stylesheet" href="animate.css">
+  <link rel="stylesheet" href="modal.css"> 
     <title>球邦</title>
     <style media="screen">
       body {
@@ -49,16 +49,16 @@
       }
 
       #tel{
-        float: right;
-        margin-right: 20%;
-        font-family: 'Microsoft Yahei';
-        font-size: 16px;
-        color: #ffffff;
-        line-height: 100px;
+         float: right;  
+         margin-right: 17%; 
+         line-height: 100px;
+         font-family: "Microsoft YaHei";
+         font-size: 16px;
+         color: #ffffff;      
       }
       #email{
         float: right;
-        margin-right: 20%;
+        margin-right: 1%;
         position: relative;
         top: 30px;   
       }
@@ -141,18 +141,7 @@
         width: 360px;
         height: 200px;
       }
-      .u-trigger{
-    position: absolute;
-    display: block;
-    width: 120px;
-    height: 32px;
-    font-size: 16px;
-    margin: 60px auto;
-    cursor: pointer;
-    top: -20px;
-    right: 10%;
-    color: #ffffff;
-  }
+      
       .font-1{
         font-family: "Microsoft Yahei";
       }
@@ -171,9 +160,8 @@
       <div class="header_img">
         <img src="images/Bunion_headerlogo.png" alt="" id="headerimg">
         <p id="jilu">记录</p><p id="dian">·</p><p id="gaoguang">你的高光时刻</p>
-          
-        <img src="images/Bunion_header_icn_email.png" alt="" id="email">
-        <a class='u-trigger' id="">联系我们</a>
+        <a id="tel">联系我们</a>
+        <img src="images/Bunion_header_icn_email.png" alt="" id="email">        
       </div>
     </div>
     <div class="img">
@@ -249,45 +237,7 @@
     <div class="footer">
         <p>copyright 201X - 201X 版权归属 北京球帮科技有限公司 京XXX备XXXXXX号-X</p>
     </div>
-      <script src="js/jquery-3.1.1.min.js"></script>
-      <script src="js/bootstrap.min.js"></script>
-      <script src='js/animate.js'></script>
-      <script src='js/modal.js'></script>
-     <script>
-
-
-
-
-
-var modal = new Modal({
-  // 1. 内容配置
-  cotent: "内容在此", //可传入节点和字符串
-  // 2. 动画设置
-  animation: {
-    enter: 'bounceIn',
-    leave: 'bounceOut'
-  }
-  // // 3. confirm回调
-  // onConfirm: function(){
-  //   console.log('ok')
-  // },
-  // // 4. cancel糊掉
-  // onCancel: function(){
-  //   console.log('cancel')
-  // }
-})
-
-
-modal.on('confirm', function(){
-  console.log('confirm')
-})
-
-
-
-document.querySelector('.u-trigger').addEventListener('click', function(){
-  modal.show("<h3>email:xxxx@xxx.com</h3"); 
-
-})
-</script>
+      <script src="https://code.jquery.com/jquery.js"></script>
+      <script src="js/bootstrap.min.js"></script>  
   </body>
 </html>

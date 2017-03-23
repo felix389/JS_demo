@@ -1,3 +1,8 @@
+const view = {
+  nameEL:document.getElementById('name');
+  ageEL:document.getElementById('age');
+};
+
 User.prototype.bind = function(view){
   view.nameEL.addEventListener('change',evt=>{
     this.name = evt.target.value;
